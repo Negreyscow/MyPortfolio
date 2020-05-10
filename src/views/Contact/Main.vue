@@ -1,5 +1,14 @@
 <template>
-  <h1>Contact</h1>
+  <v-content>
+    <v-row>
+      <v-col>
+        
+      </v-col>
+      <v-col>
+
+      </v-col>
+    </v-row>
+  </v-content>
 </template>
 
 <script>
