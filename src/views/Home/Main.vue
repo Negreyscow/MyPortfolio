@@ -12,11 +12,11 @@
     </v-row>
     <v-row class="my-10">
       <v-spacer />
-      <v-col cols="4">
-        <div class="title">
-          AboutMe
+      <v-col cols="5">
+        <div class="title d-flex">
+          About<div class="third--text">Me</div>
         </div>
-        <div class="subtitle text-justify">
+        <div class="subtitle text-justify mt-3">
           Hello! I’m Eldin Zaimovic. I'm a front-end developer who is passionate about VUE, 
           building great user experiences, fighting for simplicity over complexity and constantly 
           learning. When I'm not coding or making videos, you'll find me traveling across Europe.
@@ -27,18 +27,18 @@
     <v-row>
       <v-spacer />
       <v-col cols="4">
-        <div class="d-flex justify-center">
+        <div class="d-flex justify-space-around">
           <v-btn icon>
-            <v-icon>fab fa-facebook-f</v-icon>
+            <v-icon color="third">fab fa-facebook-f</v-icon>
           </v-btn>
           <v-btn icon>
-            <v-icon>fab fa-github</v-icon>
+            <v-icon color="third">fab fa-github</v-icon>
           </v-btn>
           <v-btn icon>
-            <v-icon>fab fa-instagram</v-icon>
+            <v-icon color="third">fab fa-instagram</v-icon>
           </v-btn>
           <v-btn icon>
-            <v-icon>fab fa-linkedin-in</v-icon>
+            <v-icon color="third">fab fa-linkedin-in</v-icon>
           </v-btn>
         </div>
       </v-col>
