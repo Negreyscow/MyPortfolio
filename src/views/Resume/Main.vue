@@ -1,5 +1,5 @@
 <template>
-  <v-content>
+  <v-content class="content">
     <v-layout row wrap class="mx-0">
       <v-flex xs12 md6>
         <v-card class="pr-5">
