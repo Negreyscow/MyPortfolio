@@ -17,9 +17,7 @@
           About<div class="third--text">Me</div>
         </div>
         <div class="subtitle text-justify mt-3">
-          Hello! I’m Eldin Zaimovic. I'm a front-end developer who is passionate about VUE, 
-          building great user experiences, fighting for simplicity over complexity and constantly 
-          learning. When I'm not coding or making videos, you'll find me traveling across Europe.
+          {{ profile.bio }}
         </div>
       </v-col>
       <v-spacer />
@@ -28,17 +26,12 @@
       <v-spacer />
       <v-col cols="4">
         <div class="d-flex justify-space-around">
-          <v-btn icon>
-            <v-icon color="third">fab fa-facebook-f</v-icon>
-          </v-btn>
-          <v-btn icon>
-            <v-icon color="third">fab fa-github</v-icon>
-          </v-btn>
-          <v-btn icon>
-            <v-icon color="third">fab fa-instagram</v-icon>
-          </v-btn>
-          <v-btn icon>
-            <v-icon color="third">fab fa-linkedin-in</v-icon>
+          <v-btn 
+            v-for="network in profile.socialNetworks" 
+            :key="network.id"
+            icon
+          >
+            <v-icon color="third"> {{ network.icon }} </v-icon>
           </v-btn>
         </div>
       </v-col>
@@ -49,7 +42,19 @@
 
 <script>
 export default {
-
+  data() {
+    return {
+      profile: {
+        socialNetworks: [
+          { id: 1, icon: 'fab fa-facebook-f' },
+          { id: 2, icon: 'fab fa-github' },
+          { id: 3, icon: 'fab fa-instagram' },
+          { id: 4, icon: 'fab fa-linkedin-in' }
+        ],
+        bio: "Hello there!"
+      }
+    }
+  }
 }
 </script>
 
