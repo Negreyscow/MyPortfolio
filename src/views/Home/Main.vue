@@ -13,12 +13,13 @@
     <v-row class="my-10">
       <v-spacer />
       <v-col cols="5">
-        <div class="title d-flex">
-          About<div class="third--text">Me</div>
+        <div class="display-1 mb-10 secondary--text d-flex justify-center">
+          Leonardo Caracho
         </div>
-        <div class="subtitle text-justify mt-3">
+        <p class="subtitle text-justify mt-3">
           {{ profile.bio }}
-        </div>
+          <span>&#128521;</span>
+        </p>
       </v-col>
       <v-spacer />
     </v-row>
@@ -51,7 +52,7 @@ export default {
           { id: 3, icon: 'fab fa-instagram' },
           { id: 4, icon: 'fab fa-linkedin-in' }
         ],
-        bio: "Hello there!"
+        bio: `Hi! I'am Leonardo a Fullstack Developer with a passion for learn and discover new things, especially about tech;`
       }
     }
   }

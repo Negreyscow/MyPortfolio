@@ -1,52 +1,56 @@
 <template>
   <v-app-bar
       app
-      color="secondary"
+      flat
     >
-      <div class="d-flex align-center">
+      <!-- <div class="d-flex align-center">
         <div class="title black--text font-weight-thin ml-12">
           Leonardo 
         </div>
         <div class="title font-weight-bold ml-2">
           Caracho
         </div>
-      </div>
+      </div> -->
 
       <v-spacer></v-spacer>
 
       <v-btn
         to="/"
         flat
+        class="mx-4"
         text
         active-class="third--text title"
       >
-        <span class="mr-2">HOME</span>
+        <span>HOME</span>
       </v-btn>
       <v-btn
         text
         flat
+        class="mx-4"
         active-class="third--text title"
         to="/resume"
       >
-        <span class="mr-2">RESUME</span>
+        <span>RESUME</span>
       </v-btn>
       <v-btn
         text
         flat
+        class="mx-4"
         active-class="third--text title"
         to="/portfolio"
       >
-        <span class="mr-2">PORTFOLIO</span>
+        <span>PORTFOLIO</span>
       </v-btn>
       <v-btn
         to="/contact"
         text
         flat
+        class="mx-4"
         active-class="third--text title"
-        class="mr-12"
       >
-        <span class="mr-2">CONTATO</span>
+        <span>CONTATO</span>
       </v-btn>
+       <v-spacer></v-spacer>
     </v-app-bar>
 </template>
 
