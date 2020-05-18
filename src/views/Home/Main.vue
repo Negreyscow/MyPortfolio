@@ -18,7 +18,7 @@
         </div>
         <p class="subtitle text-justify mt-3">
           {{ profile.bio }}
-          <span>&#128521;</span>
+          <span>❤️&#128521;</span>
         </p>
       </v-col>
       <v-spacer />
@@ -27,13 +27,25 @@
       <v-spacer />
       <v-col cols="4">
         <div class="d-flex justify-space-around">
-          <v-btn 
-            v-for="network in profile.socialNetworks" 
-            :key="network.id"
-            icon
+          <v-tooltip
+            v-for="network in profile.socialNetworks"
+            :key="network.id"  
+            bottom 
           >
-            <v-icon color="third"> {{ network.icon }} </v-icon>
-          </v-btn>
+            <template v-slot:activator="{ on }">
+              <v-btn
+                icon 
+                color="third" 
+                dark 
+                v-on="on"
+                target="_blank"
+                :href="network.url"
+              >
+                <v-icon color="third"> {{ network.icon }} </v-icon>
+              </v-btn>
+            </template>
+            <span>{{ network.tip }}</span>
+          </v-tooltip>
         </div>
       </v-col>
       <v-spacer />
@@ -47,12 +59,12 @@ export default {
     return {
       profile: {
         socialNetworks: [
-          { id: 1, icon: 'fab fa-facebook-f' },
-          { id: 2, icon: 'fab fa-github' },
-          { id: 3, icon: 'fab fa-instagram' },
-          { id: 4, icon: 'fab fa-linkedin-in' }
+          { id: 1, icon: 'fab fa-facebook-f', tip: 'Facebook', url: 'https://www.facebook.com/leonardo.caracho' },
+          { id: 2, icon: 'fab fa-github', tip: 'Github', url: 'https://github.com/Negreyscow' },
+          { id: 3, icon: 'fab fa-instagram', tip: 'Instagram', url: 'https://www.instagram.com/leonardo_caracho/' },
+          { id: 4, icon: 'fab fa-linkedin-in', tip: 'Linkedin', url: 'https://www.linkedin.com/in/leonardo-caracho-559513157/' }
         ],
-        bio: `Hi! I'am Leonardo a Fullstack Developer with a passion for learn and discover new things, especially about tech;`
+        bio: `Hi! i'am Leonardo a Fullstack Developer with a passion to learn and discover new things, in love with the bests mobile and web technologies `
       }
     }
   }

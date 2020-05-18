@@ -17,8 +17,8 @@
             <!-- <v-img height="600" src="@/assets/ui-example.png"></v-img> -->
             <div class="d-flex justify-space-between align-center">
                 <v-card-actions>
-                <v-btn color="third" class="white--text">VIEW</v-btn>
-                <v-btn color="third" class="white--text">GITHUB</v-btn>
+                <v-btn target="_blank" :href="project.view"  color="third" class="white--text">VIEW</v-btn>
+                <v-btn color="third" target="_blank" :href="project.view" class="white--text">GITHUB</v-btn>
                 </v-card-actions>
                 <div class="subtitle">{{ project.title }}</div>
                 <div class="d-flex align-center mx-5">

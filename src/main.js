@@ -1,11 +1,14 @@
 import Vue from 'vue'
 import App from './App.vue'
 import vuetify from './plugins/vuetify';
+import Vuelidate from "vuelidate";
 import './global.css'
 
 import router from './router'
 
 Vue.config.productionTip = false
+
+Vue.use(Vuelidate)
 
 new Vue({
   vuetify,

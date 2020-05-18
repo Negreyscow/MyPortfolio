@@ -46,32 +46,62 @@
       </v-col>
 
       <v-col cols="6">
-        <v-form class="d-flex flex-column">
+        <v-form 
+          action="https://formspree.io/myynkgbj"
+          method="POST"
+          class="d-flex flex-column"
+          v-model="valid"
+        >
           <v-container>
             <v-row>
               <v-col cols="12">
                 <v-text-field
                   label="Nome"
+                  v-model="form.name"
+                  name="name"
+                  :rules="nameRules"
+                  color="third"
+                  required
                 />
               </v-col>
               <v-col cols="12">
                 <v-text-field
+                  color="third"
                   label="Email"
+                  type="email"
+                  v-model="form.email"
+                  name="email"
+                  :rules="emailRules"
+                  required
                 />
               </v-col>
               <v-col cols="12">
                 <v-textarea
+                  color="third"
                   autocomplete="email"
                   label="Texto"
+                  v-model="form.text"
+                  name="text"
+                  :rules="textRules"
                 />
               </v-col>
             </v-row>
           </v-container>
           <div class="d-flex justify-center">
-            <v-btn color="third" class="white--text mx-2">
+            <v-btn
+              :disabled="!valid"
+              @click="submit" 
+              type="submit"
+              color="third" 
+              class="white--text mx-2"
+            >
               Submit
             </v-btn>
-            <v-btn color="third" class="white--text mx-2">
+            <v-btn
+              @click="clear"
+              color="third" 
+              class="white--text mx-2"
+            >
               Clear
             </v-btn>
           </div>
@@ -82,8 +112,42 @@
 </template>
 
 <script>
-export default {
 
+export default {
+  data(){
+    return {
+      valid: false,
+      form: {
+        name: '',
+        email: '',
+        text: ''
+      },
+
+      nameRules: [
+        v => !!v || 'Name is required',
+        v => (v && v.length >= 3) || 'Name must have at least 3 characters',
+      ],
+      emailRules: [
+          v => !!v || 'E-mail is required',
+          v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
+      ],
+      textRules: [
+        v => !!v || 'Name is required',
+        v => (v && v.length >= 10) || 'Text must have more than 10 characters',
+      ]
+    }
+  },
+  methods: {
+    submit() {
+      this.$v.$touch();
+    },
+    clear() {
+      this.$v.$reset()
+      this.name=''
+      this.email=''
+      this.text=''
+    }
+  }
 }
 </script>
 

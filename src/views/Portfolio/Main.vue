@@ -22,46 +22,19 @@ export default {
       projects: [
         {
           id: 1,
-          title: 'First project here',
-          thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/1/18/Cskamu_17.jpg',
+          title: 'RocketGames',
+          view: 'https://github.com/Negreyscow/RocketGames',
+          github: 'https://github.com/Negreyscow/RocketGames',
+          thumbnail: 'https://raw.githubusercontent.com/Negreyscow/RocketGames/master/img/rocket1.png',
           previews: [
-            'https://upload.wikimedia.org/wikipedia/commons/1/18/Cskamu_17.jpg',
-            'https://upload.wikimedia.org/wikipedia/commons/1/18/Cskamu_17.jpg',
-            'https://upload.wikimedia.org/wikipedia/commons/1/18/Cskamu_17.jpg'
+            'https://i.ibb.co/qpXNgKK/rocketgames1.png',
+            '@/assets/rocketgames2.png',
           ],
           techs: [
             { name: 'Vue', color: 'green'},
             { name: 'Vuetify', color: 'indigo'}
           ]
         },
-        {
-          id: 2,
-          title: 'First project here',
-          thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/1/18/Cskamu_17.jpg',
-          previews: [
-            'https://upload.wikimedia.org/wikipedia/commons/1/18/Cskamu_17.jpg',
-            'https://upload.wikimedia.org/wikipedia/commons/1/18/Cskamu_17.jpg',
-            'https://upload.wikimedia.org/wikipedia/commons/1/18/Cskamu_17.jpg'
-          ],
-          techs: [
-            { name: 'Vue', color: 'green'},
-            { name: 'Vuetify', color: 'indigo'}
-          ]
-        },
-        {
-          id: 3,
-          title: 'First project here',
-          thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/1/18/Cskamu_17.jpg',
-          previews: [
-            'https://upload.wikimedia.org/wikipedia/commons/1/18/Cskamu_17.jpg',
-            'https://upload.wikimedia.org/wikipedia/commons/1/18/Cskamu_17.jpg',
-            'https://upload.wikimedia.org/wikipedia/commons/1/18/Cskamu_17.jpg'
-          ],
-          techs: [
-            { name: 'Vue', color: 'green'},
-            { name: 'Vuetify', color: 'indigo'}
-          ]
-        }
       ]
     }
   },
