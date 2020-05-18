@@ -2,17 +2,22 @@
     <v-dialog>
         <template v-slot:activator="{ on }">
             <v-card v-on="on">
-            <v-img width="100%" height="100%" :src="project.thumbnail"></v-img>
+                <v-img width="400" height="200" :src="project.thumbnail"></v-img>
             </v-card>
         </template>
 
         <v-card color="primary">
-            <v-carousel height="650">
+            <v-carousel height="720">
                 <v-carousel-item
                     v-for="preview in project.previews"
                     :key="JSON.stringify(preview)"
+                    reverse-transition="fade-transition"
+                    transition="fade-transition"
                     :src="preview"
-                />
+                >
+                    <!-- <v-img width="900" height="1000" :src="preview" /> -->
+                </v-carousel-item>
+
             </v-carousel>
             <!-- <v-img height="600" src="@/assets/ui-example.png"></v-img> -->
             <div class="d-flex justify-space-between align-center">

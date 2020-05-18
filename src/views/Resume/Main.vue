@@ -17,11 +17,11 @@
     </v-layout>
 
     <v-layout row wrap class="mx-0">
-      <v-flex xs12 md12 my-12>
+      <v-col cols="12">
         <div class="justify-center text-center title my-3 font-weight-medium">
           <span>Skills</span>
         </div>
-        <div class="d-flex justify-center">
+        <div class="d-flex justify-center flex-wrap">
           <v-chip
             v-for="tech in techs"
             :key="tech.name"
@@ -35,12 +35,12 @@
             {{ tech.name }}
           </v-chip>
         </div>
-      </v-flex>
+      </v-col>
 
-      <v-flex xs12 md12>
-        <div class="d-flex justify-center mt-12">
+      <v-col cols="12">
+        <div class="d-flex flex-wrap justify-center mt-12">
           <v-btn
-            large 
+            large
             color="third" 
             class="white--text"
             target="_blank"
@@ -49,7 +49,7 @@
             DOWNLOAD RESUME <v-icon right>fas fa-arrow-down</v-icon>
           </v-btn>
         </div>
-      </v-flex>
+      </v-col>
     </v-layout>
 
   </v-content>
@@ -64,10 +64,12 @@ export default {
     return {
       techs: [
         { name: 'Vue.js', color: '#4fbc8d' }, 
-        { name: 'React.js', color: '#61dafb'},
-        { name: 'Node.js', color: 'green'},
-        { name: 'Javascript', color: 'green'},
-        { name: 'Python', color: 'green'}
+        { name: 'React', color: '#61dafb'},
+        { name: 'ReactNative', color: '#2c3e50'},
+        { name: 'Node.js', color: '#026e00'},
+        { name: 'Javascript', color: '#e67e22'},
+        { name: 'C#', color: '#e74c3c'},
+        { name: 'Python', color: '#8e44ad'}
       ],
       educationItems: [
         {
@@ -85,7 +87,8 @@ export default {
             end: 'CURRENT',
             title: 'Fullstack Developer',
             location: 'Datacoper'
-        }
+        },
+        
       ]
     }
   },

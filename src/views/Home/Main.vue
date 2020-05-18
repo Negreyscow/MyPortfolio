@@ -1,7 +1,7 @@
 <template>
   <v-content class="content">
     <v-row>
-      <v-col cols="12">
+      <v-col md="12" sm="6" cols="12">
         <v-img
           class="img-perfil"
           height="300"
@@ -12,7 +12,7 @@
     </v-row>
     <v-row class="my-10">
       <v-spacer />
-      <v-col cols="5">
+      <v-col sm="10" md="5" cols="10">
         <div class="display-1 mb-10 secondary--text d-flex justify-center">
           Leonardo Caracho
         </div>
@@ -25,7 +25,7 @@
     </v-row>
     <v-row>
       <v-spacer />
-      <v-col cols="4">
+      <v-col md="4" sm="8" cols="12">
         <div class="d-flex justify-space-around">
           <v-tooltip
             v-for="network in profile.socialNetworks"
