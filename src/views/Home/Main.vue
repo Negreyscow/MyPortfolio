@@ -7,6 +7,7 @@
           height="300"
           width="300"
           src="@/assets/perfil.jpg" 
+          gradient="to top right, rgba(255,255,255,.11), rgba(255,255,255,0.4)"
         />
       </v-col>
     </v-row>
@@ -64,7 +65,7 @@ export default {
           { id: 3, icon: 'fab fa-instagram', tip: 'Instagram', url: 'https://www.instagram.com/leonardo_caracho/' },
           { id: 4, icon: 'fab fa-linkedin-in', tip: 'Linkedin', url: 'https://www.linkedin.com/in/leonardo-caracho-559513157/' }
         ],
-        bio: `Hi! i'am Leonardo a Fullstack Developer with a passion to learn and discover new things, in love with the bests mobile and web technologies `
+        bio: `Hi! i'am Leonardo a Fullstack Developer with a passion to learn and discover new things, in love with the bests mobile and web technologies. `
       }
     }
   }

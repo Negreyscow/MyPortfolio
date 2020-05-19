@@ -16,7 +16,7 @@
       </v-flex>
     </v-layout>
 
-    <v-layout row wrap class="mx-0">
+    <v-layout row wrap class="mx-0 mt-10">
       <v-col cols="12">
         <div class="justify-center text-center title my-3 font-weight-medium">
           <span>Skills</span>
@@ -78,7 +78,14 @@ export default {
             end: 'DEZ 2019',
             title: 'Bacharel em Ciência da Computação',
             location: 'UNIOESTE - Universidade do Oeste do Paraná'
-        }
+        },
+        {
+            id: 1,
+            start: 'JAN 2019',
+            end: 'MAR 2019',
+            title: 'Javascript Developer',
+            location: 'Alura'
+        },
       ],
       xpItems: [
         {
@@ -88,7 +95,13 @@ export default {
             title: 'Fullstack Developer',
             location: 'Datacoper'
         },
-        
+        {
+            id: 0,
+            start: 'JAN 2018',
+            end: 'MAR 2018',
+            title: 'internship',
+            location: 'Tecinco Tecnologia'
+        },
       ]
     }
   },
