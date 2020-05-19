@@ -1,7 +1,7 @@
 <template>
   <v-content class="content">
     <v-row>
-      <v-col cols="6">
+      <v-col xs="12" md="6">
         <v-container class="mt-6">
           <v-row>
             <v-col>
@@ -45,7 +45,7 @@
         </v-container>
       </v-col>
 
-      <v-col cols="6">
+      <v-col xs="12" md="6">
         <v-form 
           action="https://formspree.io/myynkgbj"
           method="POST"
