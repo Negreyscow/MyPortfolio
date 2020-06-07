@@ -23,43 +23,72 @@ export default {
         {
           id: 1,
           title: 'RocketGames',
-          view: 'https://github.com/Negreyscow/RocketGames',
+          view: '',
           github: 'https://github.com/Negreyscow/RocketGames',
-          thumbnail: 'https://raw.githubusercontent.com/Negreyscow/RocketGames/master/img/rocket1.png',
-          previews: [
-            'https://uploaddeimagens.com.br/images/002/656/895/full/vai.jpg?1589812818',
-            'https://uploaddeimagens.com.br/images/002/656/900/original/vai.jpg?1589812972',
-          ],
+          thumbnail: 'https://i.imgur.com/jxrZHYR.png',
           techs: [
             { name: 'React', color: '#61dafb'}
           ]
         },
         {
           id: 2,
-          title: 'DevFinder',
-          view: 'https://github.com/Negreyscow/DevRadar',
+          title: 'DevRadar',
+          view: '',
           github: 'https://github.com/Negreyscow/DevRadar',
-          thumbnail: 'https://raw.githubusercontent.com/Negreyscow/DevRadar/master/img/desktop.PNG',
-          previews: [
-            'https://uploaddeimagens.com.br/images/002/656/927/full/Sem_T%C3%ADtulo-2.jpg?1589813803',
-            'https://uploaddeimagens.com.br/images/002/656/929/full/a.jpg?1589813852'
-          ],
+          thumbnail: 'https://i.imgur.com/GOzzdKN.png',
           techs: [
-            { name: 'React', color: '#61dafb'}
+            { name: 'React', color: '#61dafb'},
+            { name: 'NodeJS', color: '#026e00'},
+            { name: 'ReactNative', color: '#2c3e50'}
           ]
         },
         {
           id: 2,
           title: 'Be the Hero',
-          view: 'https://github.com/Negreyscow/BeTheHero',
+          view: '',
           github: 'https://github.com/Negreyscow/BeTheHero',
-          thumbnail: 'https://raw.githubusercontent.com/Negreyscow/BeTheHero/master/img/desktop1.PNG',
+          thumbnail: 'https://i.imgur.com/kvNEeQT.png',
+          techs: [
+            { name: 'React', color: '#61dafb'},
+            { name: 'NodeJS', color: '#026e00'},
+            { name: 'ReactNative', color: '#2c3e50'}
+          ]
+        },
+        {
+          id: 2,
+          title: 'Ecoleta',
+          view: '',
+          github: 'https://github.com/LeonardoCaracho/NLW-Ecoleta',
+          thumbnail: 'https://i.imgur.com/MHu8phU.png',
           previews: [
             'https://i.ibb.co/YcHbv9C/a.png',
             'https://i.ibb.co/mS3FWgh/a2.png'
           ],
           techs: [
-            { name: 'React', color: '#61dafb'}
+            { name: 'React', color: '#61dafb'},
+            { name: 'NodeJS', color: '#026e00'},
+            { name: 'ReactNative', color: '#2c3e50'}
+          ]
+        },
+        {
+          id: 2,
+          title: 'My Trash Movies',
+          view: '',
+          github: 'https://github.com/LeonardoCaracho/MyTrashFilms',
+          thumbnail: 'https://raw.githubusercontent.com/LeonardoCaracho/MyTrashFilms/master/img/desktop-1.PNG',
+          techs: [
+            { name: 'Angular', color: '#b31b22'},
+            { name: 'NestJS', color: '#ff776e'},
+          ]
+        },
+        {
+          id: 2,
+          title: 'OB-01 Trading Bot',
+          view: 'https://www.ob01.com.br/',
+          github: '',
+          thumbnail: 'https://i.imgur.com/rk6aQyh.png',
+          techs: [
+            { name: 'VueJS', color: '#4fbc8d'},
           ]
         },
       ]

@@ -7,27 +7,20 @@
         </template>
 
         <v-card color="primary">
-            <v-carousel height="720">
-                <v-carousel-item
-                    v-for="preview in project.previews"
-                    :key="JSON.stringify(preview)"
-                    reverse-transition="fade-transition"
-                    transition="fade-transition"
-                    :src="preview"
-                >
-                    <!-- <v-img width="900" height="1000" :src="preview" /> -->
-                </v-carousel-item>
-
-            </v-carousel>
+            <v-img
+                reverse-transition="fade-transition"
+                transition="fade-transition"
+                :src="project.thumbnail"
+            />
             <!-- <v-img height="600" src="@/assets/ui-example.png"></v-img> -->
             <div class="d-flex justify-space-between align-center">
                 <v-card-actions>
-                <v-btn target="_blank" :href="project.view"  color="third" class="white--text">VIEW</v-btn>
-                <v-btn color="third" target="_blank" :href="project.view" class="white--text">GITHUB</v-btn>
+                <v-btn :disabled="!project.view" target="_blank" :href="project.view"  color="third" class="white--text">VIEW</v-btn>
+                <v-btn :disabled="!project.github" color="third" target="_blank" :href="project.github" class="white--text">GITHUB</v-btn>
                 </v-card-actions>
                 <div class="subtitle">{{ project.title }}</div>
                 <div class="d-flex align-center mx-5">
-                    <div class="mx-3 subtitle-2">Made with</div>
+                    <div class="mx-3 subtitle-2">Build with</div>
                     <v-chip 
                         v-for="tech in project.techs"
                         :key="tech.name"

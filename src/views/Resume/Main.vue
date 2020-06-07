@@ -44,7 +44,7 @@
             color="third" 
             class="white--text"
             target="_blank"
-            href="https://docs.google.com/document/d/1Y_8DaTQYXGPTrQCigGFtttSjXZgiYZw9dF_UvYs1oXk/edit"
+            href="https://resume.io/r/kgocixMXf"
           >
             DOWNLOAD RESUME <v-icon right>fas fa-arrow-down</v-icon>
           </v-btn>
@@ -69,14 +69,16 @@ export default {
         { name: 'Node.js', color: '#026e00'},
         { name: 'Javascript', color: '#e67e22'},
         { name: 'C#', color: '#e74c3c'},
-        { name: 'Python', color: '#8e44ad'}
+        { name: 'Python', color: '#8e44ad'},
+        { name: 'Angular', color: '#b31b22'},
+        { name: 'NestJS', color: '#ff776e'}
       ],
       educationItems: [
         {
             id: 0,
             start: 'JAN 2015',
             end: 'DEZ 2019',
-            title: 'Bacharel em Ciência da Computação',
+            title: 'Computer Science Bachelor',
             location: 'UNIOESTE - Universidade do Oeste do Paraná'
         },
         {

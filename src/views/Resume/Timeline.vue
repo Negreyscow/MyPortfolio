@@ -11,13 +11,11 @@
                     color="third"  
                     small
                 >
-                    <div class="d-flex align-center">
-                        <div  class="flex-grow-1">
+                    <div class="d-flex align-left">
                         <span class="subtitle-2 font-weight-medium"> {{ item.start }} -<br>{{ item.end }}</span>
-                        </div>
-                        <div class="flex-grow-1">
-                        <div class="subtitle font-weight-light">{{ item.title }}</div>
-                        <div class="subtitle-2 font-weight-bold">{{ item.location }}</div>
+                        <div class="ml-4">
+                            <div class="subtitle font-weight-light">{{ item.title }}</div>
+                            <div class="subtitle-2 font-weight-bold">{{ item.location }}</div>
                         </div>
                     </div>
                 </v-timeline-item>

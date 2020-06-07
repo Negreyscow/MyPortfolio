@@ -2,3 +2,11 @@
     max-width: 1000px;
     margin: 0 auto;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto+Condensed&display=swap');
+
+body {
+    font-family: 'Merriweather', Helvetica, Arial, sans-serif; /* this was it */
+}
+

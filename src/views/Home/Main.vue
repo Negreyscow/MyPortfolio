@@ -14,7 +14,7 @@
     <v-row class="my-10">
       <v-spacer />
       <v-col sm="10" md="5" cols="10">
-        <div class="display-1 mb-10 secondary--text d-flex justify-center">
+        <div class="display-1 font-weight-medium mb-10 secondary--text d-flex justify-center">
           Leonardo Caracho
         </div>
         <p class="subtitle text-justify mt-3">
@@ -61,7 +61,7 @@ export default {
       profile: {
         socialNetworks: [
           { id: 1, icon: 'fab fa-facebook-f', tip: 'Facebook', url: 'https://www.facebook.com/leonardo.caracho' },
-          { id: 2, icon: 'fab fa-github', tip: 'Github', url: 'https://github.com/Negreyscow' },
+          { id: 2, icon: 'fab fa-github', tip: 'Github', url: 'https://github.com/leonardocaracho' },
           { id: 3, icon: 'fab fa-instagram', tip: 'Instagram', url: 'https://www.instagram.com/leonardo_caracho/' },
           { id: 4, icon: 'fab fa-linkedin-in', tip: 'Linkedin', url: 'https://www.linkedin.com/in/leonardo-caracho-559513157/' }
         ],
