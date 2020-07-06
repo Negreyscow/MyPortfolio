@@ -5,17 +5,18 @@
         <v-container class="mt-6">
           <v-row>
             <v-col>
-              <div class="title">
+              <div class="display-1">
                 <v-icon color="third" small class="mb-3">fas fa-map-marked-alt</v-icon>
                 Where i live?
               </div>
               <span class="subtitle-2">Cascavel - PR - Brazil</span>
+              <br>
             </v-col>
           </v-row>
 
           <v-row>
             <v-col>
-              <div class="title">
+              <div class="display-1 mt-5">
                 <v-icon color="third" small class="mb-3">far fa-envelope</v-icon>
                 Email me
               </div>
@@ -25,21 +26,11 @@
 
           <v-row>
             <v-col>
-              <div class="title">
+              <div class="display-1 mt-5">
                 <v-icon color="third" small class="mb-3">fas fa-phone-volume</v-icon>
                 Phone
               </div>
               <span class="subtitle-2">+55 44 99743-5350</span>
-            </v-col>
-          </v-row>
-
-          <v-row>
-            <v-col>
-              <div class="title">
-                <v-icon color="third" small class="mb-3">fas fa-briefcase</v-icon>
-                Available for hire?
-              </div>
-              <span class="subtitle-2">Not this moment</span>
             </v-col>
           </v-row>
         </v-container>
@@ -56,7 +47,7 @@
             <v-row>
               <v-col cols="12">
                 <v-text-field
-                  label="Nome"
+                  label="Name"
                   v-model="form.name"
                   name="name"
                   :rules="nameRules"
@@ -79,7 +70,7 @@
                 <v-textarea
                   color="third"
                   autocomplete="email"
-                  label="Texto"
+                  label="Message"
                   v-model="form.text"
                   name="text"
                   :rules="textRules"
@@ -95,7 +86,7 @@
               color="third" 
               class="white--text mx-2"
             >
-              Submit
+              Send
             </v-btn>
             <v-btn
               @click="clear"

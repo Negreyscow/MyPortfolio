@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Home from './views/Home/Main'
-import Contact from './views/Contact/Main'
-import Resume from './views/Resume/Main'
-import Portfolio from './views/Portfolio/Main'
+import Home from './views/Home/Home'
+import Contact from './views/Contact/Contact'
+import Resume from './views/Resume/Resume'
+import Portfolio from './views/Portfolio/Portfolio'
 
 Vue.use(VueRouter)
 
